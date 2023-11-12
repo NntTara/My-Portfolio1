@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.image1{
+    width: 65%;
+    display: flex;
+    border-radius: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    font-family: 'Poppins', sana-serif;
+    background-color: #18181b;
+    
+}
+
+nav{
+    width: 1200px;
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 250px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1d4ed8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.bb{
+    padding-top: 4.5rem;
+}
+
+.bb .mf{
+    padding: 1rem 2rem;
+    margin: 2rem;
+    height: 3rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #1d4ed8;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+
+.mf:hover{
+    background-color: black;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #808080;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: hsla(249, 88%, 13%, 0.829);
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: 90%;
+}
+
+header .content h1{
+    color: rgb(165, 206, 241);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 2rem;
+    line-height: 4rem;
+    -webkit-text-stroke: 1px rgb(15, 14, 14);
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #02021a;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.cc{
+    display: flex;
+}
+
+.cc .su{
+    color: #0d1b69a1;
+}
+
+.cc .th{
+    color: rgb(201, 53, 78);
+}
+
+header .image{
+    position: relative;
+
+}
+
+header .image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #1d4ed8;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+.mm{
+    color: #c0bfc2;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.ms{
+    font-weight: 700;
+    margin-right: 13px; 
+}
+
+.features{
+    display: flex;
+    padding:  2rem;
+    gap: 0.5rem;
+    background-color: #808080;
+    grid-template-columns: repeat(1, 1fr);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.card span{
+    margin-right: 1px;
+    font-size: 1rem;
+}
+
+/* About section */
+
+.aa{
+    background-color: rgb(201, 76, 76);
+}
+
+.pt{
+    font-weight: 500;
+    font-style: italic;
+    padding: 10px;
+}
+
+.abb{
+    background-color: rgb(22, 22, 37);
+    padding: 6px;
+    border-radius: 5%;
+    justify-content: center;
+    margin-right: 20px ;
+}
+
+.image2{
+    width: 65%;
+    display: flex;
+    border-radius: 10%;
+    border: 5px solid wheat;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.image2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.image2:hover img{
+    transform: scale(1.1);
+}
+
+/* Certificate section */
+
+.cer{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.cer img{
+    display: inline-block;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cer .cerm{
+    background-color: #1f1c1c;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+.cer .cerm:hover{
+    background-color: #323232;
+    border-color: #fff;
+    transform: scale(.9);
+}
+
+.cer .cerm h4{
+    margin-bottom: 0.2rem;
+}
+
+.cer .cerm .see{
+    color: wheat;
+}
+
+.cer .cerm .see:hover{
+    color: rgb(156, 73, 156);
+}
+
+/* Activity */
+
+.cer .cerm img{
+    width: 100%;
+}
