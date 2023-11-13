@@ -211,6 +211,7 @@ header .image img{
     font-weight: 500;
     font-style: italic;
     padding: 10px;
+    color: #ccc;
 }
 
 .abb{
